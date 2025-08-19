@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import excelmodule
 import csvmodule
+import jsonmodule
 
 def check_product():
     url = "https://sneakerstore.by/muzhskie-krossovki/"
@@ -27,3 +28,4 @@ def check_product():
 
 excelmodule.add_to_excel(check_product)
 csvmodule.add_to_csv(check_product)
+jsonmodule.add_to_json(check_product)
