@@ -1,7 +1,7 @@
 import csv
 
 def add_to_csv(scrap):
-    FILENAME = "shoes.csv"
+    FILENAME = "../result scraping/shoes.csv"
 
     with open(FILENAME,"w",newline="") as file:
         writer = csv.writer(file)

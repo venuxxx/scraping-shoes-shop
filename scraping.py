@@ -1,8 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
-import excelmodule
-import csvmodule
-import jsonmodule
+from scraping_shoe_store.modules import excelmodule, jsonmodule, csvmodule
+
 
 def check_product():
     url = "https://sneakerstore.by/muzhskie-krossovki/"
