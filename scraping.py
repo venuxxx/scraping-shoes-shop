@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import excelmodule
-from time import sleep
+import csvmodule
 
 def check_product():
     url = "https://sneakerstore.by/muzhskie-krossovki/"
@@ -26,3 +26,4 @@ def check_product():
         products = soup.find_all("li", class_="catalogue__products-list-item")
 
 excelmodule.add_to_excel(check_product)
+csvmodule.add_to_csv(check_product)
